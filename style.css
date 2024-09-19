@@ -108,6 +108,7 @@ form i {
 
 .fa-heart {
   margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
   font-size: 20px;
   color: rgb(13, 61, 218);
@@ -116,6 +117,25 @@ form i {
 
 .fa-heart:hover {
   transform: scale(1.5);
+}
+.fa-download {
+  cursor: pointer;
+  font-size: 20px;
+  color: aliceblue;
+}
+.fa-download:hover {
+  color: rgb(13, 61, 218);
+  transform: scale(1.5);
+}
+.download {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.1s ease-in-out;
 }
 form input {
   flex: 1;
@@ -220,7 +240,7 @@ form #search {
 #search-results img:hover {
   transform: scale(1.07);
   border-radius: 10px;
-  box-shadow: 1px 2px 5px black;
+  box-shadow: 1px 2px 15px black;
 }
 #search-results p {
   margin-top: 10px;
@@ -251,13 +271,14 @@ form #search {
 
 @media (max-width: 800px) {
   #search-results {
+    width: 95%;
     column-count: 2; /* 2 columns */
   }
 }
 @media screen and (max-width: 720px) {
   h1 {
-    font-size: 30px;
-    text-align: center;
+    font-size: 25px;
+    text-align: left;
 
     font-weight: 600;
     font-family: Griffy-Regular;
@@ -280,7 +301,6 @@ form #search {
     font-size: 14px !important;
   }
   #showmore-btn {
-  width: 60%;
- 
-}
+    width: 60%;
+  }
 }
